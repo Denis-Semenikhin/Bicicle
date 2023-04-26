@@ -3,3 +3,67 @@
 
 //Шаблоны стилей
 @import "_shablon-style";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+.conteiner {
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  .main-screen {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+
+    .header {
+      .header-row {
+        .list {
+          display: flex;
+          justify-content: center;
+          padding-top: 35px;
+          margin-left: 80px;
+          .li {
+            margin-top: 30px;
+            padding-right: 60px;
+            font-family: "Lato";
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #4d4959;
+          }
+          .li-l {
+            margin-top: 30px;
+            padding-right: 60px;
+            padding-left: 60px;
+            font-family: "Lato";
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #4d4959;
+            &:after {
+              content: " ";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              border: 1px solid #000;
+              padding-right: 30px;
+            }
+          }
+          .logo {
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+  }
+}
