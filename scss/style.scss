@@ -26,7 +26,7 @@
           margin-left: 80px;
           .li {
             margin-top: 30px;
-            padding-right: 60px;
+            padding-right: 30px;
             font-family: "Lato";
             font-size: 13px;
             line-height: 1.2;
@@ -35,9 +35,21 @@
             letter-spacing: 0.2em;
             color: #4d4959;
           }
-          .li-l {
+          li:first-child {
+            &:after {
+              content: ". ";
+              margin-left: 30px;
+            }
+          }
+          li:nth-child(2) {
+            margin-right: 30px;
+          }
+          li:nth-child(3) {
+          }
+
+          .li-1 {
             margin-top: 30px;
-            padding-right: 60px;
+            padding-right: 30px;
             padding-left: 60px;
             font-family: "Lato";
             font-size: 13px;
@@ -46,13 +58,10 @@
             text-transform: uppercase;
             letter-spacing: 0.2em;
             color: #4d4959;
+
             &:after {
-              content: " ";
-              width: 4px;
-              height: 4px;
-              border-radius: 50%;
-              border: 1px solid #000;
-              padding-right: 30px;
+              content: ". ";
+              margin-left: 30px;
             }
           }
           .logo {
@@ -62,8 +71,79 @@
     }
   }
   .content {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #000;
+    .generation {
+      background-color: #f7f7f7;
+      text-align: center;
+      padding-top: 117px;
+      padding-bottom: 142px;
+    }
+  }
+  .brands__row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .brands__column--big {
+      flex: 1 0 66.667%;
+      position: relative;
+      height: 100%;
+
+      .big__img {
+        width: 100%;
+      }
+      .brands__logo {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+      }
+    }
+    .brands__column--little {
+      flex: 1 0 33.333%;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+
+      .brands__text-block {
+        flex: 1 0 66.667%;
+        height: 66%;
+        text-align: center;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+        .brands__text {
+          font-family: "Lato";
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #848789;
+          margin-bottom: 18px;
+        }
+      }
+      .little__img {
+        width: 100%;
+        flex: 1 0 33.333%;
+        height: 33%;
+      }
+    }
+  }
+  .sublogo {
+    margin-bottom: 33px;
+  }
+  .title {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #353738;
+    margin-bottom: 25px;
+  }
+  .text {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #848789;
+    text-align: justify;
   }
 }

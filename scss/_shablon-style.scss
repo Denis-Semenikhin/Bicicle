@@ -1,5 +1,5 @@
 //Брейкпоинты для адаптивной верстки
-$maxw: 1200px;
+$maxw: 1080px;
 $midw: 992px;
 $minw: 767px;
 
@@ -19,6 +19,7 @@ $col2: white;
 }*/
 
 //Контейнер
-/*.conteiner{
-    max-width: $maxw;
-}*/
+.conteiner {
+  max-width: $maxw;
+  margin: 0 auto;
+}
